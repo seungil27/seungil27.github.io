@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- switchTest.html -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="http://code.jquery-1.11.1.miin.js"></script>
+  <link rel="stylesheet"href="../css/sample.css"/>
+  <script src="../js/sample.js"></script>
+<title>웹 프로그래밍 실습</title>
+</head>
+<body>
+<header>
+<h2>실습 대환영</h2></header>
+<nav>
+<ul>
+<li><a href="http://hive.dju.ac.kr">실습서버</a></li>
+</ul>
+</nav>
+<section>
+<h4>Switch 예제 실습</h4>
+<script>
+var gradeLevel=window.prompt("학년 입력:") //입력 하는거 띄워줌
+var eGradeLevel=undefinde;
+switch(gradeLevel){
+case "1":eGradeLevel="frashman"; break;
+case "2":eGradeLevel="sophomore"; break;
+case "3":eGradeLevel="juninor"; break;
+case "4":eGradeLevel="senior"; break;
+defaurt:eGradeLevel="not a student";
+}
+document.write("영어로 학년=",eGradeLevel, "<br/>");
+</script></section>
+<footer>
+<p>&copy; 2018 Made By Korea. All rights reserved.</p></footer>
+</body>
+</html>
