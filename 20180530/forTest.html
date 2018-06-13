@@ -1,7 +1,7 @@
-<!DOCTYPE html> <!-- fortest.html -->
+<!DOCTYPE html> <!-- forTest.html -->
 <html>
 <head>
-<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <script src="http://code.jquery-1.11.1.miin.js"></script>
   <link rel="stylesheet"href="../css/sample.css"/>
@@ -19,7 +19,7 @@
 <section>
 <h4>for 예제 실습</h4>
 <script>
-var namex  ["홍길동","이몽룡","변학도","손오공","저팔계"];
+var namex = ["홍길동","이몽룡","변학도","손오공","저팔계"];
 for(var i=0; i<namex.length; i++){
 document.write(namex[i]."<br/>");
 }
@@ -27,11 +27,11 @@ var sum=0;
 var datax = [10, 13, 15, 17, 29 ,11, 13, 14, 21, 34];
 for(var i=0; i<datax.length; i++)
 sum = sum + datax[i];
-document.write("for합계=", sum,"<br/>");
+document.write("for 합계=", sum, "<br/>");
 var sum=0;
 for(var i in datax)
-sum = sum +datax[i];
-document.write("for in 합계 = ",sum, "<br/>");
+sum = sum + datax[i];
+document.write("for in 합계 = ", sum, "<br/>");
 </script></section>
 <footer>
 <p>&copy; 20188 Made By Korea. All rights reserved.</p></footer>
