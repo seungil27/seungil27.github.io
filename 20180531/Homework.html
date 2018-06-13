@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Homework.html -->
+<html>
+<head>
+<meta http-equive="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <script src="http://code.jquery-1.11.1.miin.js"></script>
+  <link rel="stylesheet"href="../css/sample.css"/>
+  <script src="../js/sample.js"></script>
+<title>웹 프로그래밍 실습</title>
+</head>
+<body>
+<header>
+<h2>실습 대환영</h2></header>
+<nav>
+<ul>
+<li><a href="http://hive.dju.ac.kr">실습서버</a></li>
+</ul>
+</nav>
+<section>
+<h4>평균구하기</h4>
+<script>
+var pop = window.prompt("인원수를 입력하세요:");
+function sumy(pop){
+var score = 0;
+var sum = 0;
+var result = 0;
+for(var i=0; i<pop; i++){
+score = window.prompt("점수를 입력하세요:");
+score = parseFloat(score);
+sum = sum + score;
+result = sum / pop[i];
+}
+return result;
+}
+var avg = sumy(pop);
+document.write("인원수:", pop, "평균 점수:", avg, "<br/>");
+</script></section>
+<footer>
+<p>&copy; 2018 Made By Korea. All rights reserved.</p></footer>
+</body>
+</html>
